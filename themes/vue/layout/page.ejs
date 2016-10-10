@@ -9,7 +9,7 @@
 <% } %>
 <div class="content <%- page.type ? page.type + ' with-sidebar' : '' %> <%- page.type === 'guide' ? page.path.replace(/.+\//, '').replace('.html', '') + '-guide' : '' %>">
     <%- partial('partials/ad') %>
-    <h1><%- page.title %><%- page.type === 'examples' ? ' Example' : '' %></h1>
+    <h1><%- page.title %><%- page.type === 'examples' ? ' 示例' : '' %></h1>
     <%- page.content %>
     <% if (page.type === 'guide') { %>
       <div class="guide-links">
